@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+canvas {
+  display: block;
+  background: linear-gradient(
+    to top,
+    #FF696B,
+    #FFDD7B
+  );
+}
+
+.slider {
+  position: fixed;
+  transform: rotate(180deg);
+  -webkit-appearance: none;
+  width: 50%;
+  margin-left: 18vw;
+  margin-top: 22px;
+  height: 15px;
+  background: linear-gradient(
+    to right,
+    #F6F0F4,
+    #F9EBF7
+  );
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
